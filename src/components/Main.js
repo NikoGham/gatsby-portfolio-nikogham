@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import cert_Electron from '../images/cert_Electron.jpg'
 
 class Main extends React.Component {
   render() {
@@ -29,29 +29,16 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Intro</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
+          
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            Economics graduate turned web developer. Turns out playing on
+            computers is more fun.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Played around with Electron and React Native. Working on Mern Stack
+            for now.{' '}
           </p>
+          <p>Big fan of chess, Judo, BJJ and large dogs. </p>
           {close}
         </article>
 
@@ -64,22 +51,38 @@ class Main extends React.Component {
         >
           <h2 className="major">Work</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <a
+              target={'_blank'}
+              rel="noopener noreferrer"
+              href="https://github.com/NikoGham/FFG_BUSINESS-PAGE"
+            >
+              <img src={pic02} alt="" />
+            </a>
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            <a
+              target={'_blank'}
+              rel="noopener noreferrer"
+              href="https://www.fullfatgrappling.co.uk/"
+            >
+              Website for local grappling club.
+            </a>
+            <ul>
+              <li>Unique UI Design</li>
+              <li>Built with React </li>
+              <li>React-reveal, React-Scroll, TS-particles, React-Bootstrap</li>
+              <li>Fully Responsive</li>
+              <li>
+                Email, domain, netlify hosting & form submission configuration.
+              </li>
+            </ul>
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            Built from a bare bones template. Click on image for github
+            readMe.md. Took a while to do both the UI and web development.
+            Enjoyed playing around with TS-particles. Loads of cool variations.
+            Client wanted a Japanese inspired theme, mixed in with own gold logo
+            design.
           </p>
           {close}
         </article>
@@ -91,19 +94,11 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">CV/Education</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={cert_Electron} alt="" />
           </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+
           {close}
         </article>
 
@@ -115,7 +110,8 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+
+          <form method="post" action="https://getform.io/f/a4d71355-5a16-4c31-bfac-9745b8bcdc41">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -140,28 +136,43 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
+                target={'_blank'}
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/kolyaboga/"
+                className="icon fa-instagram"
               >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
                 <span className="label">Instagram</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                target={'_blank'}
+                rel="noopener noreferrer"
+                href="https://www.freecodecamp.org/nikogham"
+                className="icon fa-free-code-camp"
+              >
+                <span className="label">Freecodecamp</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                target={'_blank'}
+                rel="noopener noreferrer"
+                href="https://github.com/NikoGham"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target={'_blank'}
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/nick-gillham-3bb6971a1/"
+                className="icon fa-linkedin"
+              >
+                <span className="label">LinkedIn</span>
               </a>
             </li>
           </ul>
