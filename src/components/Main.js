@@ -28,17 +28,19 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
-          
+          <div className="align-center">
+          <h2 className=" align-center">yo...</h2>
+
           <p>
             Economics graduate turned web developer. Turns out playing on
-            computers is more fun.
+            computers is better than the dismal science.
           </p>
           <p>
-            Played around with Electron and React Native. Working on Mern Stack
-            for now.{' '}
+            Played around with Electron and React Native. Working on MERNStack
+            for now.
           </p>
-          <p>Big fan of chess, Judo, BJJ and large dogs. </p>
+          <p>Big fan of chess, Judo, BJJ and dogs. </p>
+          </div>
           {close}
         </article>
 
@@ -69,8 +71,7 @@ class Main extends React.Component {
             </a>
             <ul>
               <li>Unique UI Design</li>
-              <li>Built with React </li>
-              <li>React-reveal, React-Scroll, TS-particles, React-Bootstrap</li>
+              <li>Built with React,React-reveal, React-Scroll, TS-particles, React-Bootstrap</li>
               <li>Fully Responsive</li>
               <li>
                 Email, domain, netlify hosting & form submission configuration.
@@ -111,7 +112,10 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
 
-          <form method="post" action="https://getform.io/f/a4d71355-5a16-4c31-bfac-9745b8bcdc41">
+          <form
+            method="post"
+            action="https://getform.io/f/a4d71355-5a16-4c31-bfac-9745b8bcdc41"
+          >
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
