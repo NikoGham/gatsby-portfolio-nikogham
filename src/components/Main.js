@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import cert_Electron from '../images/cert_Electron.jpg'
 
@@ -28,18 +27,24 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <div className="align-center">
-          <h2 className=" align-center">yo...</h2>
+          <div className="align-center introPara">
+            <h2 className=" major">yo...</h2>
 
-          <p>
-            Economics graduate turned web developer. Turns out playing on
-            computers is better than the dismal science.
-          </p>
-          <p>
-            Played around with Electron and React Native. Working on MERNStack
-            for now.
-          </p>
-          <p>Big fan of chess, Judo, BJJ and dogs. </p>
+            <div id="introIcons">
+            <i id="iconLarge" class="fab fa-html5 icon"></i>
+            <i id="iconLarge" class="fab fa-css3-alt icon"></i>
+            <i id="iconLarge" class="fab fa-js-square icon"></i>
+            <i id="iconLarge" class="fab fa-sass icon"></i>
+            <i id="iconLarge" class="fab fa-react icon"></i>
+
+            </div>
+
+            <code>Economics graduate turned web developer.</code>
+            <code>
+              Playing around with Electron and React Native. Working on
+              MERNStack for now.
+            </code>
+            <code>Big fan of chess, Judo and dogs. </code>
           </div>
           {close}
         </article>
@@ -71,7 +76,10 @@ class Main extends React.Component {
             </a>
             <ul>
               <li>Unique UI Design</li>
-              <li>Built with React,React-reveal, React-Scroll, TS-particles, React-Bootstrap</li>
+              <li>
+                Built with React,React-reveal, React-Scroll, TS-particles,
+                React-Bootstrap
+              </li>
               <li>Fully Responsive</li>
               <li>
                 Email, domain, netlify hosting & form submission configuration.
@@ -112,21 +120,27 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
 
-          <form
-            method="post"
-            action="https://getform.io/f/a4d71355-5a16-4c31-bfac-9745b8bcdc41"
-          >
+          <form name="contact" method="post">
+            <input type="hidden" name="form-name" value="contact" />
+
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input required defaultValue='' type="text" name="contactName" id="contactName" />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input required defaultValue='' type="text" name="contactEmail" id="contactEmail" />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <textarea
+                required
+                name="contactMessage"
+                placeholder="How much wood can a woodchucker chuck..."
+                defaultValue=''
+                id="contactMessage"
+                rows="4"
+              ></textarea>
             </div>
             <ul className="actions">
               <li>
@@ -142,7 +156,7 @@ class Main extends React.Component {
               <a
                 target={'_blank'}
                 rel="noopener noreferrer"
-                href="https://www.instagram.com/kolyaboga/"
+                href="https://www.instagram.com/nikogham.dev/"
                 className="icon fa-instagram"
               >
                 <span className="label">Instagram</span>

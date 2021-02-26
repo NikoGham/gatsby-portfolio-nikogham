@@ -10,8 +10,13 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
+		margin: 10px 10px;
 
 		> .label {
 			display: none;
 		}
+	}
+
+	#iconLarge {
+		font-size: 3rem;
 	}

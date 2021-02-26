@@ -79,7 +79,7 @@
 			width: max-content;
 			padding-bottom: 0.5rem;
 			margin: 0 0 (_size(element-margin) * 1) 0;
-		
+
 		}
 	}
 
@@ -138,6 +138,8 @@
 	blockquote {
 		border-left: solid (_size(border-width) * 4) _palette(border);
 		font-style: italic;
+		font-family: _font(family-fixed);
+
 		margin: 0 0 _size(element-margin) 0;
 		padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
 	}

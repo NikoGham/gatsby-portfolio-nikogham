@@ -18,6 +18,24 @@
 		z-index: 3;
 		display: none;
 
+		.introPara {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: flex-start;
+
+			code {
+				align-self: center;
+				margin: 1rem;
+			}
+
+
+			#introIcons {
+				align-self: center;
+			}
+
+		}
+
 		article {
 			@include vendor('transform', 'translateY(0.25rem)');
 			@include vendor('transition', (
