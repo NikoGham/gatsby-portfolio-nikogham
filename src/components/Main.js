@@ -120,31 +120,33 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
 
-          <form name="contact" method="post">
+          <form name="contact"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              method="POST">
             <input type="hidden" name="form-name" value="contact" />
 
             <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input required defaultValue='' type="text" name="contactName" id="contactName" />
+              <label htmlFor="contactName">Name</label>
+              <input required type="text" name="contactName" id="contactName" />
             </div>
             <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input required defaultValue='' type="text" name="contactEmail" id="contactEmail" />
+              <label htmlFor="contactEmail">Email</label>
+              <input required  type="email" name="contactEmail" id="contactEmail" />
             </div>
             <div className="field">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="contactMessage">Message</label>
               <textarea
                 required
                 name="contactMessage"
                 placeholder="How much wood can a woodchucker chuck..."
-                defaultValue=''
                 id="contactMessage"
                 rows="4"
               ></textarea>
             </div>
             <ul className="actions">
               <li>
-                <input type="submit" value="Send Message" className="special" />
+                <input type="submit" className="special" />
               </li>
               <li>
                 <input type="reset" value="Reset" />
