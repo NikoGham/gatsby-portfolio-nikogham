@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic02 from '../images/pic02.jpg'
-import cert_Electron from '../images/cert_Electron.jpg'
+import { StaticImage } from 'gatsby-plugin-image'
 
 class Main extends React.Component {
   render() {
@@ -31,12 +31,11 @@ class Main extends React.Component {
             <h2 className=" major">yo...</h2>
 
             <div id="introIcons">
-            <i id="iconLarge" class="fab fa-html5 icon"></i>
-            <i id="iconLarge" class="fab fa-css3-alt icon"></i>
-            <i id="iconLarge" class="fab fa-js-square icon"></i>
-            <i id="iconLarge" class="fab fa-sass icon"></i>
-            <i id="iconLarge" class="fab fa-react icon"></i>
-
+              <i id="iconLarge" class="fab fa-html5 icon"></i>
+              <i id="iconLarge" class="fab fa-css3-alt icon"></i>
+              <i id="iconLarge" class="fab fa-js-square icon"></i>
+              <i id="iconLarge" class="fab fa-sass icon"></i>
+              <i id="iconLarge" class="fab fa-react icon"></i>
             </div>
 
             <code>Economics graduate turned web developer.</code>
@@ -105,7 +104,25 @@ class Main extends React.Component {
         >
           <h2 className="major">CV/Education</h2>
           <span className="image main">
-            <img src={cert_Electron} alt="" />
+            <StaticImage
+              src="../images/cert_Electron.jpeg"
+              alt="Electron Certificate"
+            />
+          </span>
+          <span className="image main">
+            <StaticImage
+              src="../images/cert_ReactFTB.jpeg"
+              alt=" React Certificate"
+            />
+          </span>
+          <span className="image main">
+            <StaticImage src="../images/js.jpeg" alt="JavaScript Certificate" />
+          </span>
+          <span className="image main">
+            <StaticImage
+              src="../images/reactRedux.jpeg"
+              alt="React/Redux Certificate"
+            />
           </span>
 
           {close}
@@ -120,10 +137,12 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
 
-          <form name="contact"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              method="POST">
+          <form
+            name="contact"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            method="POST"
+          >
             <input type="hidden" name="form-name" value="contact" />
 
             <div className="field half first">
@@ -132,7 +151,12 @@ class Main extends React.Component {
             </div>
             <div className="field half">
               <label htmlFor="contactEmail">Email</label>
-              <input required  type="email" name="contactEmail" id="contactEmail" />
+              <input
+                required
+                type="email"
+                name="contactEmail"
+                id="contactEmail"
+              />
             </div>
             <div className="field">
               <label htmlFor="contactMessage">Message</label>

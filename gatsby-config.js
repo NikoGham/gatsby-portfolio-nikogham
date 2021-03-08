@@ -5,7 +5,23 @@ module.exports = {
     description: 'A Gatsby.js V2 Starter based on Dimension by HTML5 UP',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'UA-191463380-1',
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+      },
+    },
+
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -18,6 +34,12 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
   ],
 }
